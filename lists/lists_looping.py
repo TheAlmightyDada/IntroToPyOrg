@@ -14,7 +14,3 @@ for bird in birds:
     print('I like'+ ' '+ bird.title())
     print('I really do, it\'s true. ' + 'I just love ' + bird)
 print('\nAt the end of the loop, bird = ' + bird)   
-
-bird = 'null'   
-
-print('now, bird =' + bird)

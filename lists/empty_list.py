@@ -75,3 +75,15 @@ usernames.reverse()
 
 print(usernames)
 
+#length of a list.
+print('\n\n')
+user_count = len(usernames)
+
+print(user_count)
+
+### RESETING THE LIST###
+
+usernames = []
+
+print(usernames)
+

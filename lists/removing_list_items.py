@@ -17,3 +17,6 @@ dogs = ['border collie', 'australian cattle dog', 'labrador retriever']
 dogs.remove('australian cattle dog')
 
 print('\n' + str(dogs))
+
+# '.remove' only works for the first item in the list
+

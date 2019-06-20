@@ -12,9 +12,9 @@ def get_number_word(number):
     elif number ==4:
         return 'four'
     else:
-        return 'I\'m sorry, I do not know that number
+        return 'I\'m sorry, I do not know that number'
 
-for n in range(0,4):
+for n in range(0,6):
     number_word = get_number_word(n)
     print(n, number_word)
 

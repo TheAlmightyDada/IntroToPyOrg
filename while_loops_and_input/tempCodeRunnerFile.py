@@ -1,0 +1,1 @@
+choice = input('\nWhat would you like to do?')

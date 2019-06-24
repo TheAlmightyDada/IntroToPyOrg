@@ -7,11 +7,10 @@ quit_var = ''
 
 user_name = ''
 
-# The two lists. 
+# The list. 
 
-money_in_list = []
+number_in_list = []
 
-money_out_list = []
 
 print('\nWelcome to my program!')
 
@@ -26,9 +25,9 @@ while quit_var != 'quit':
     quit_var = input('Enter number:')
 
     if quit_var != 'quit':
-        money_in_list.append(quit_var)
+        number_in_list.append(quit_var)
 
-for n in money_in_list:
+for n in number_in_list:
     print(n)
 
 

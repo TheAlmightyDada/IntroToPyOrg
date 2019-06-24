@@ -325,3 +325,18 @@ last_celeb2 = famous_peeps.pop()
 print(last_celeb)
 print(famous_peeps)
 
+#! Ex 13, Alphabet Slices -- Store the first ten letters of the alphabet in a list.
+#!  Use a slice to print out the first three letters of the alphabet.
+#!  Use a slice to print out any three letters from the middle of your list.
+#!  Use a slice to print out the letters from any point in the middle of your 
+#!    list, to the end.
+
+
+print('\n Ex 13, Alphabet Slices')
+
+alpha_list = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j']
+
+print(alpha_list[:3])
+print(alpha_list[4:7])
+print(alpha_list[7:])
+

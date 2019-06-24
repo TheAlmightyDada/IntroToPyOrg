@@ -10,3 +10,5 @@ while power > 0:
     power = power - 1
 
 print('\nOh no, your power has dropped to 0! Game Over.')
+
+

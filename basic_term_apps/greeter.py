@@ -1,5 +1,6 @@
 import os
 from time import sleep
+import pickle
 
 # Greeter is a terminal application that greets old friends warmly,
 #   and remembers new friends.
@@ -36,13 +37,36 @@ def get_new_name():
         names.append(new_name)
         print('\nI\'m so happy to know %s!\n' % new_name.title())
 
+def load_names():
+    # This function loads names from a file, and puts them in the list 'names'. 
+    #   If the file doesn't exist, it creates an empty list.
+
+    try:
+        file_object = open('names.pydata', 'rb')
+        names = pickle.load(file_object)
+        file_object.close()
+        return names
+    except Exception as e:
+        print(e)
+        return []
+
+def quit():
+    # This function demps the names into a file, and prints a quit message.
+    try:
+        file_object = open('names.pydata', 'wb')
+        pickle.dump(names,file_object)
+        file_object.close()
+        print('\nThanks for playing. I will remember these good friends.')
+    except Exception as e:
+        print('\nThanks for playing. I won\'t be able to remember these names.')
+        print(e)
     
 
 
 ### MAIN PROGRAM ###
 
 # Set up a loop where users can choose what they'd like to do.
-names = []
+names = load_names()
 
 choice = ''
 display_title_bar()
@@ -62,6 +86,7 @@ while choice != 'q':
         get_new_name()
 
     elif choice == 'q':
+        quit()
         print('\nThanks for playing. Bye')
 
     else:

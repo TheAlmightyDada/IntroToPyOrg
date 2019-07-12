@@ -340,3 +340,31 @@ print(alpha_list[:3])
 print(alpha_list[4:7])
 print(alpha_list[7:])
 
+#! Ex 14, Protected List -- Your goal in this exercise is to prove that copying
+#!   a list protects the original list.
+#! Make a list with three people's names in it.
+#! Use a slice to make a copy of the entire list.
+#! Add at least two new names to the new copy of the list.
+#! Make a loop that prints out all of the names in the original list, along 
+#!   with a message that this is the original list.
+#! Make a loop that prints out all of the names in the copied list, along with 
+#!   a message that this is the copied list.
+
+print('\n Ex 14, Protected List')
+
+ex14_list = ['miranda', 'shaft', 'stephen']
+
+ex14_copy = ex14_list[:]
+
+ex14_copy.append('anthony')
+ex14_copy.append('charlie')
+
+print('These are the names of the original list: ')
+
+for n in ex14_list:
+    print(n.title())
+
+print('\nThese are the names of the new \'copied\' list: ')
+
+for n in ex14_copy:
+    print(n.title())

@@ -368,3 +368,81 @@ print('\nThese are the names of the new \'copied\' list: ')
 
 for n in ex14_copy:
     print(n.title())
+
+#! Ex 15, First Twenty --  Use the range() function to store the first twenty 
+#!   numbers (1-20) in a list, and print them out.
+
+print('\n Ex 15, First Twenty')
+
+first_twenty =[list(range(1,21))]
+
+for n in first_twenty:
+    print(n)
+
+#! Ex 16, Five Wallets -- Imagine five wallets with different amounts of cash 
+#!  in them. Store these five values in a list, and print out the following sentences:
+#!  "The fattest wallet has $ value in it."
+#!  "The skinniest wallet has $ value in it."
+#!  "All together, these wallets have $ value in them."
+
+print('\n Ex 16, Five Wallets')
+
+fivewallets = [15,358,42,10]
+
+fattest_wallet = max(fivewallets)
+skinniest_wallet = min(fivewallets)
+total_cash = sum(fivewallets)
+
+print('The fattest wallet has £%d in it' % fattest_wallet)
+print('The skinniest wallet has £%d in it' % skinniest_wallet)
+print('The total cash in all the wallets is £%d' % total_cash)
+
+#! Ex 17, Multiples of Ten -- Make a list of the first ten multiples of ten 
+#!  (10, 20, 30... 90, 100). There are a number of ways to do this, but try 
+#!   to do it using a list comprehension. Print out your list.
+
+print('\n Ex 17, Multiples of Ten')
+
+mot = [n*10 for n in range(1,11)]
+
+for n in mot:
+    print(n)
+
+#! Ex 18, Cubes -- We saw how to make a list of the first ten squares.
+#!   Make a list of the first ten cubes (1, 8, 27... 1000) using a list
+#!   comprehension, and print them out.
+
+print('\n Ex 18, Cubes')
+
+cubes = [n**3 for n in range(1,11)]
+
+for n in cubes: 
+    print(n)
+
+#! Ex 19, Awesomeness --  Store five names in a list. Make a second list 
+#!  that adds the phrase "is awesome!" to each name, using a list 
+#!  comprehension. Print out the awesome version of the names.
+
+print('\n Ex 19, Awesomeness')
+
+awesome_names_1 = ['derek','james','julie','alisha','toran']
+
+awesome_names_2 = [n.title() + ' is awesome!' for n in awesome_names_1]
+
+for n in awesome_names_2:
+    print(n)
+
+#! Ex 20, Working Bakwards -- Write out the following code without using a 
+#!  list comprehension:
+
+#!  plus_thirteen = [number + 13 for number in range(1,11)]
+
+print('\n Ex 20, Working Bakwards')
+
+naked_numbers = []
+
+for n in range(1,11):
+    naked_numbers.append(n + 13)
+    
+for n in naked_numbers:
+    print(n)

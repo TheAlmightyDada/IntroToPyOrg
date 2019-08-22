@@ -2,9 +2,15 @@ import pickle
 
 # This program asks the user for some animals, and stores them.
 
-# Make an empty list to store new animals in. 
+# Try to load animals. If they don't exist, make an empty list.
 
-animals = []
+try:
+    file_object = open('animals.pydata', 'rb')
+    animals = pickle.load(file_object)
+    file_object.close()
+
+except:
+    animals = []
 
 # Create a loop that lets users stor new animals.
 

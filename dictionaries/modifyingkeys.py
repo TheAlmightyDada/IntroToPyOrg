@@ -7,6 +7,8 @@ python_words = {'lisst': 'A collection of values that are not connected,but have
 
 python_words['list'] = python_words['lisst']
 
+print(python_words)
+
 del python_words['lisst']
 
 # Print the dictionary, to sow that the key has changed.

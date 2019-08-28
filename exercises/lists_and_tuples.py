@@ -446,3 +446,18 @@ for n in range(1,11):
     
 for n in naked_numbers:
     print(n)
+
+#! Ex 21, Listing a Sentance -- Store a single sentence in a variable. Use a 
+#!  for loop to print each character from your sentence on a separate line.
+
+sent_var = 'Store a single sentence in a variable.'
+
+for l in sent_var:
+    print('\n %s' % l)
+
+#! Ex 22, Sentance List -- Print your raw list (don't use a loop, 
+#!  just print the list).
+
+sent_list = list(sent_var)
+
+print(sent_list)
